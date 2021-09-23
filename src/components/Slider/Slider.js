@@ -7,6 +7,7 @@ import img2 from "./../../images/car2.jpg";
 import { Carousel } from "react-bootstrap";
 import SliderCaption from "./SliderCaption";
 
+
 const sliderImage = [img1, img2];
 
 const Slider = () => {
