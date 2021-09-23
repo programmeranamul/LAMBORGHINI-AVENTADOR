@@ -17,15 +17,14 @@ const FeaturedProduct = () => {
         star.push("MdStarBorder");
       }
     }
-    console.log(star);
     return star;
   };
 
   return (
     <div className="row mt-5">
       {FeaturedProductList.length > 0 &&
-        FeaturedProductList.map((product) => (
-          <div className="col-md-4 mb-5 mb-md-0 px-4">
+        FeaturedProductList.map((product, index) => (
+          <div key={index} className="col-md-4 mb-5 mb-md-0 px-4">
             <div className={`${style.featured__product__card} card`}>
               <div className={style.card__image_wrapper}>
                 <img
@@ -36,8 +35,12 @@ const FeaturedProduct = () => {
               </div>
               <div className="card-body">
                 <div className={`${style.rating} pb-3`}>
-                  {getRating(product.ratings)?.map((rating) =>
-                    rating === "MdStar" ? <MdStar /> : <MdStarBorder />
+                  {getRating(product.ratings)?.map((rating, index) =>
+                    rating === "MdStar" ? (
+                      <MdStar key={index} />
+                    ) : (
+                      <MdStarBorder key={index} />
+                    )
                   )}{" "}
                   - <small className="white700">{product.ratingBy}</small>
                 </div>

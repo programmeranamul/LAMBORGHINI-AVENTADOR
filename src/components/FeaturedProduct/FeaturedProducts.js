@@ -4,7 +4,7 @@ import FeaturedProduct from "./FeaturedProduct";
 
 const FearuredProducts = () => {
   return (
-    <div className="mt-5 pt-3">
+    <div className="mt-0 pt-3 mt-md-5 ">
       <SectionTitle
         text={"fetaured products"}
         description={

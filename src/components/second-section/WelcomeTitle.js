@@ -3,12 +3,12 @@ import style from "./seconSection.module.css";
 
 const WelcomeTitle = () => {
   return (
-    <div class="d-flex justify-content-center">
-      <div class={style.content}>
-        <div class={style.text__container}>
-          <h2 class={`${style.title} white700 text-uppercase fs-3`}>
+    <div className="d-flex justify-content-center">
+      <div className={style.content}>
+        <div className={style.text__container}>
+          <h2 className={`${style.title} white700 text-uppercase fs-3`}>
             WELCOME TO <br />{" "}
-            <b class="white800">
+            <b className="white800">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CAR STORE
             </b>
           </h2>

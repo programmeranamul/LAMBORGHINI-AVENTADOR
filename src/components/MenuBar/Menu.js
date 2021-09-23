@@ -15,9 +15,13 @@ const Menu = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              {menuList.map((menu) => {
+              {menuList.map((menu, index) => {
                 return menu.dropdown ? (
-                  <NavDropdown title={menu.text} className="text-danger">
+                  <NavDropdown
+                  key={index}
+                    title={menu.text}
+                    className={menu.active ? "active_menu" : ""}
+                  >
                     {menu.dropdownList.length > 0 &&
                       menu.dropdownList.map((dropdown, index) => (
                         <NavDropdown.Item href="#action/3.1" key={index}>
@@ -26,7 +30,13 @@ const Menu = () => {
                       ))}
                   </NavDropdown>
                 ) : (
-                  <Nav.Link href="#link">Link</Nav.Link>
+                  <Nav.Link
+                  key={index}
+                    className={menu.active ? "active_menu" : ""}
+                    href="#link"
+                  >
+                    {menu.text}
+                  </Nav.Link>
                 );
               })}
             </Nav>

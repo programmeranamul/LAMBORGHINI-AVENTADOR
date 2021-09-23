@@ -5,7 +5,7 @@ const CarClub = () => {
   return (
     <div className=" mb-3">
       <div className="row">
-        <div className="col-md-6 d-md-flex align-items-center p-5 p-md-3">
+        <div className="col-md-6 d-md-flex align-items-center p-5 pt-3 p-md-3">
           <img src={image} alt="" className="img-fluid" />
         </div>
         <div className="col-md-6 d-md-flex flex-column">

@@ -7,15 +7,14 @@ import img2 from "./../../images/car2.jpg";
 import { Carousel } from "react-bootstrap";
 import SliderCaption from "./SliderCaption";
 
-
 const sliderImage = [img1, img2];
 
 const Slider = () => {
   return (
     <div>
       <Carousel fade>
-        {sliderImage.map((slider) => (
-          <Carousel.Item interval={2000} className={style.slider}>
+        {sliderImage.map((slider, key) => (
+          <Carousel.Item key={key} interval={2000} className={style.slider}>
             <img className="d-block w-100" src={slider} alt="First slide" />
             <SliderCaption />
           </Carousel.Item>

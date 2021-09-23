@@ -73,7 +73,7 @@
 
 @media (max-width: 767.98px) {
   .slider {
-    height: 90vh !important;
+    height: 80vh !important;
   }
   .slider__caption h2 {
     letter-spacing: 6px;

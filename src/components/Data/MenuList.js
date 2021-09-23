@@ -3,6 +3,7 @@ export const menus = [
     text: "Home",
     dropdown: true,
     path: "/",
+    active:true,
     dropdownList: [
       { text: "Action", path: "/" },
       { text: "Action", path: "/" },
