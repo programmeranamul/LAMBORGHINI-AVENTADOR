@@ -1,0 +1,77 @@
+/* color  */
+.white800 {
+  color: rgba(255, 255, 255, 0.8);
+}
+.white700 {
+  color: rgba(255, 255, 255, 0.7);
+}
+.white200 {
+  color: rgba(255, 255, 255, 0.2);
+}
+.red {
+  color: red;
+}
+
+/* width and height */
+.h-100 {
+  height: 100% !important;
+}
+
+/* letter-spacing */
+.lp-3 {
+  letter-spacing: 3px;
+}
+.lp-13 {
+  letter-spacing: 13px;
+}
+
+/* Font Size */
+.fs-9 {
+  font-size: 9px;
+}
+
+/* Margin And Padding */
+.mt_-6 {
+  margin-top: -6px !important;
+}
+
+/*--------------------------------------------- overwrite bootstrap-------------------------------------------- */
+/* Navbar */
+.nav-link {
+  color: rgba(255, 255, 255, 0.8) !important;
+  clip-path: polygon(10% 0, 98% 0, 89% 100%, 1% 100%) !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+.navbar {
+  padding-bottom: 0px !important;
+}
+.nav-link:hover {
+  background-color: #e51515 !important;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.4);
+  padding: 1px !important;
+  margin-bottom: 10px;
+}
+.navbar-light .navbar-toggler svg {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 35px;
+}
+
+/* carousel */
+.carousel-indicators [data-bs-target] {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 50%;
+}
+
+@media (max-width: 767.98px) {
+  .nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%) !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
