@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+
 /* color  */
 .white800 {
   color: rgba(255, 255, 255, 0.8);
@@ -65,6 +67,10 @@
   width: 8px !important;
   height: 8px !important;
   border-radius: 50%;
+}
+.signature{
+  font-family: 'Bonheur Royale', cursive !important;
+  font-size: 50px !important;
 }
 
 @media (max-width: 767.98px) {

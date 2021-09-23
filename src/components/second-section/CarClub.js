@@ -26,8 +26,8 @@ const CarClub = () => {
               Voluptates, harum.
             </p>
           </div>
-          <div className="">
-            <p className="fs-3 text-muted">Dechssa</p>
+          <div>
+            <p className="fs-3 text-muted signature">Dechssa</p>
           </div>
         </div>
       </div>
