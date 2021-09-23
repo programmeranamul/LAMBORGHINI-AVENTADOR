@@ -73,6 +73,9 @@
   font-family: "Bonheur Royale", cursive !important;
   font-size: 50px !important;
 }
+.ps-relative {
+  position: relative;
+}
 
 @media (max-width: 767.98px) {
   .nav-link {

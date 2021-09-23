@@ -5,6 +5,44 @@
   position: relative;
   padding: 21px 130px !important;
 }
+
+.border_wrapper {
+  display: inline-block;
+  margin: auto;
+  position: relative;
+}
+.border_wrapper::after,
+.border_wrapper::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: red;
+  top: 44%;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 153px;
+}
+
+.border_wrapper::before {
+  left: -153px;
+}
+
+.right_daigonal_line,
+.left_daigonal_line {
+  position: absolute;
+  content: "";
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 59px;
+  height: 1px;
+  top: 41%;
+}
+
+.right_daigonal_line {
+  right: -59px;
+}
+.left_daigonal_line {
+  left: -59px;
+}
+
 .inside {
   position: absolute;
   top: 1px;

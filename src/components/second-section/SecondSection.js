@@ -5,7 +5,7 @@ import CarClub from "./CarClub";
 import Products from "./Products";
 import FearuredProducts from "../FeaturedProduct/FeaturedProducts";
 
-const Welcome = () => {
+const SecondSection = () => {
   return (
     <div className={`${style.section} pb-5 pt-3`}>
       <div className="container">
@@ -18,4 +18,4 @@ const Welcome = () => {
   );
 };
 
-export default Welcome;
+export default SecondSection;

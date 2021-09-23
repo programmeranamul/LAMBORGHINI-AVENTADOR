@@ -1,7 +1,8 @@
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import MenuBar from "./components/MenuBar/MenuBar";
-import Welcome from "./components/second-section/Welcome";
+import SecondSection from "./components/second-section/SecondSection";
 import Slider from "./components/Slider/Slider";
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
     <div className="App">
       <Slider />
       <MenuBar />
-      <Welcome />
+      <SecondSection />
     </div>
   );
 }

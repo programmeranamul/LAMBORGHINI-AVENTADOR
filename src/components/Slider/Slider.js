@@ -1,7 +1,5 @@
 import React from "react";
 import style from "./Slider.module.css";
-import "react-multi-carousel/lib/styles.css";
-import "react-multi-carousel/lib/styles.css";
 import img1 from "./../../images/car3.jpg";
 import img2 from "./../../images/car2.jpg";
 import { Carousel } from "react-bootstrap";

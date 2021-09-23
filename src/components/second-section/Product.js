@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./seconSection.module.css";
-import "./../../App.css";
 
 const Product = ({ product }) => {
   const { image, category, title, offer } = product;

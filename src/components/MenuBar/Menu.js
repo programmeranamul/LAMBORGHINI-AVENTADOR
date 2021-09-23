@@ -18,7 +18,7 @@ const Menu = () => {
               {menuList.map((menu, index) => {
                 return menu.dropdown ? (
                   <NavDropdown
-                  key={index}
+                    key={index}
                     title={menu.text}
                     className={menu.active ? "active_menu" : ""}
                   >
@@ -31,7 +31,7 @@ const Menu = () => {
                   </NavDropdown>
                 ) : (
                   <Nav.Link
-                  key={index}
+                    key={index}
                     className={menu.active ? "active_menu" : ""}
                     href="#link"
                   >
