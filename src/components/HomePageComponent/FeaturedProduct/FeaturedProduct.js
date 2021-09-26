@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import style from "./featured-product.module.css";
 import { MdStar, MdStarBorder, MdShoppingCart } from "react-icons/md";
-import { FeaturedProducts } from "../Data/FearuredProductData";
+import { FeaturedProducts } from "../../Data/FearuredProductData";
 
 const FeaturedProduct = () => {
   const [FeaturedProductList] = useState(FeaturedProducts);
@@ -24,7 +24,7 @@ const FeaturedProduct = () => {
     <div className="row mt-5">
       {FeaturedProductList.length > 0 &&
         FeaturedProductList.map((product, index) => (
-          <div key={index} className="col-md-4 mb-5 mb-md-0 px-4">
+          <div key={index} className="col-md-4 mb-5 mb-md-0 ">
             <div className={`${style.featured__product__card} card`}>
               <div className={style.card__image_wrapper}>
                 <img
@@ -52,7 +52,7 @@ const FeaturedProduct = () => {
                   <p className="">${product.price}</p>
                 </div>
                 <div>
-                  <button className={`${style.my_btn} btn btn-sm`}>
+                  <button className={`${style.my_btn} btn`}>
                     <MdShoppingCart /> add to cart
                   </button>
                 </div>

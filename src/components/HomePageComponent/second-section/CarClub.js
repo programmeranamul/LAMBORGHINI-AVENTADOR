@@ -1,5 +1,5 @@
 import React from "react";
-import image from "./../../images/car-club.png";
+import image from "./../../../images/car-club.png";
 
 const CarClub = () => {
   return (

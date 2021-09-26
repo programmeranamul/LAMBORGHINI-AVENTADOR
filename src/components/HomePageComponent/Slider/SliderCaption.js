@@ -2,7 +2,7 @@ import React from "react";
 import { Carousel, Form } from "react-bootstrap";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import style from "./Slider.module.css";
-import logo from "./../../images/logo.png";
+import logo from "./../../../images/logo.png";
 
 const SliderCaption = () => {
   return (
@@ -22,7 +22,7 @@ const SliderCaption = () => {
       <div>
         <div className="mb-4 ">
           <p className={style.btn}>
-            lorem Ipsam <MdKeyboardArrowRight />
+            <span>lorem Ipsam</span> <MdKeyboardArrowRight />
           </p>
         </div>
         <div className={`${style.exhaust_container} px-3`}>

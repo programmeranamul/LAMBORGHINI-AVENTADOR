@@ -1,4 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap"); */
+/* @import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Oswald:wght@400;600;700&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Oswald:wght@400;500;600;700&family=Rubik:wght@400;500;600&display=swap");
+
+.app {
+  overflow-x: hidden !important;
+}
 
 /* color  */
 .white800 {
@@ -10,10 +16,24 @@
 .white200 {
   color: rgba(255, 255, 255, 0.2);
 }
+.white300 {
+  color: rgba(255, 255, 255, 0.3);
+}
+.white900 {
+  color: rgba(255, 255, 255, 0.9);
+}
+
 .red {
   color: red;
 }
+.red900 {
+  color: #dd1319;
+}
 
+/* background color */
+.bg-main {
+  background-color: #14151b !important;
+}
 /* width and height */
 .h-100 {
   height: 100% !important;
@@ -26,10 +46,19 @@
 .lp-13 {
   letter-spacing: 13px;
 }
+.lp-2{
+  letter-spacing: 2px;
+}
 
 /* Font Size */
 .fs-9 {
   font-size: 9px;
+}
+.fs-14{
+  font-size: 14px;
+}
+.fs-21 {
+  font-size: 21px;
 }
 
 /* Margin And Padding */
@@ -37,6 +66,17 @@
   margin-top: -6px !important;
 }
 
+
+/* font family */
+.font_oswald{
+  font-family: Oswald, sans-serif;
+}
+.font_rubik{
+  font-family: Rubik, sans-serif;
+}
+.fw-500{
+  font-weight: 500;
+}
 /*--------------------------------------------- overwrite bootstrap-------------------------------------------- */
 /* Navbar */
 .nav-link {

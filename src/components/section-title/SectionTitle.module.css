@@ -25,7 +25,10 @@
 .border_wrapper::before {
   left: -153px;
 }
-
+.description{
+  font-size: 13px;
+  font-weight: 400;
+}
 .right_daigonal_line,
 .left_daigonal_line {
   position: absolute;

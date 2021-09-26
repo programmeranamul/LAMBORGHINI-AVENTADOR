@@ -11,7 +11,7 @@ const SectionTitle = ({ text, description }) => {
           <div
             className={`${style.inside} d-flex align-items-center justify-content-center `}
           >
-            <h6 className="text-uppercase m-0 text-white">
+            <h6 className="text-uppercase m-0 font_oswald text-white lp-2">
               <span>* </span>
               {text} <span> *</span>
             </h6>
@@ -19,7 +19,7 @@ const SectionTitle = ({ text, description }) => {
         </div>
       </div>
 
-      <p className="text-center white200 mt-2">{description}</p>
+      <p className={ ` ${style.description} text-center white200 mt-2 font_rubik`}>{description}</p>
     </div>
   );
 };

@@ -4,6 +4,7 @@ import image3 from "./../../images/3.jpg"
 
 export const FeaturedProducts = [
     {
+      
       image: image1,
       ratings: 4,
       ratingBy: "anamul",
