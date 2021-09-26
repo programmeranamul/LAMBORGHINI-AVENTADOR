@@ -59,7 +59,7 @@ const ProductCard = ({ product }) => {
                   <p
                     className={
                       product.newPrice
-                        ? "text-decoration-line-through white300"
+                        ? "text-decoration-line-through white300 fs-14"
                         : "red"
                     }
                   >
