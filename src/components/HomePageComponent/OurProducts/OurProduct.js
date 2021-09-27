@@ -16,9 +16,9 @@ const OurProduct = () => {
           </p>
         ))}
       </div>
-      <div className="row">
+      <div className="row mt-5">
         {ourProducts.map((product, index) => (
-          <div key={index} className="col-lg-3 mb-5 mb-lg-0 col-sm-6 mt-5">
+          <div key={index} className="col-lg-3 mb-5 mb-lg-0 col-sm-6 ">
             <ProductCard product={product} />
           </div>
         ))}

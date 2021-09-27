@@ -4,7 +4,7 @@ import { processSystemData } from "./../../Data/ProcessSystemData";
 
 const ProcessSystem = () => {
   return (
-    <div className={`${style.section} bg-main`}>
+    <div className={`${style.section}`}>
       <div className="container">
         <div className="row">
           {processSystemData.map((data, index) => (

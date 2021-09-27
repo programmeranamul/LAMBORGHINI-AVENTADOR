@@ -4,7 +4,10 @@
 
 .app {
   overflow-x: hidden !important;
+  position: relative;
+  
 }
+
 
 /* color  */
 .white800 {

@@ -1,27 +1,17 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import MenuBar from "./components/MenuBar/MenuBar";
-import Slider from "./components/HomePageComponent/Slider/Slider";
+
+import HomePage from "./pages/HomePage/HomePage";
 import Footer from "./components/Footer/Footer";
-import Tstimonial from "./components/HomePageComponent/Testimonial/Tstimonial";
-import NewAndBestSellerProduct from "./components/HomePageComponent/NewAndBestSellerProduct/NewAndBestSellerProduct";
-import SecondSection from "./components/HomePageComponent/second-section/SecondSection";
-import OurProducts from "./components/HomePageComponent/OurProducts/OurProducts";
-import ProcessSystem from './components/HomePageComponent/ProcessSystem/ProcessSystem';
+import BackToTop from './components/commonComponent/BactToTop/BackToTop';
 
 function App() {
   return (
     <div className="app">
-      <Slider />
-      <MenuBar />
-      <SecondSection />
-      <Tstimonial />
-      <OurProducts />
-      <NewAndBestSellerProduct />
-      <ProcessSystem />
-      
+      <HomePage />
       <Footer />
+      <BackToTop />
     </div>
   );
 }

@@ -7,7 +7,7 @@ const NewAndBestSellerProduct = () => {
   return (
     <div className={"bg-main"}>
       <div className="row">
-        <div className="col-md-6 pe-0 mb-3 mb-md-0">
+        <div className="col-md-6 pe-0 mb-5 mb-md-0">
           <div className={`${style.card} text-center `}>
             <img src={car6} alt="" />
             <div>
