@@ -9,13 +9,13 @@ const TopFooter = () => {
     <div className={`bg-main ${style.top_footer}`}>
       <div className="container">
         <div className="row">
-          <div className="col-md-5 d-flex justify-content-end flex-column">
+          <div className="col-lg-5 d-flex justify-content-end flex-column">
             {leftFooterData.map((data, index) => (
               <LeftFooterCard key={index} data={data} />
             ))}
           </div>
-          <div className="col-md-7">
-            <div className="row">
+          <div className="col-lg-7">
+            <div className={`${style.res_border} row`}>
               {rightFooterData.map((footerData, index) => (
                 <RightFooterCard key={index} footerData={footerData} />
               ))}

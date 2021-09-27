@@ -5,9 +5,7 @@
 .app {
   overflow-x: hidden !important;
   position: relative;
-  
 }
-
 
 /* color  */
 .white800 {
@@ -49,7 +47,7 @@
 .lp-13 {
   letter-spacing: 13px;
 }
-.lp-2{
+.lp-2 {
   letter-spacing: 2px;
 }
 
@@ -57,7 +55,7 @@
 .fs-9 {
   font-size: 9px;
 }
-.fs-14{
+.fs-14 {
   font-size: 14px;
 }
 .fs-21 {
@@ -69,15 +67,14 @@
   margin-top: -6px !important;
 }
 
-
 /* font family */
-.font_oswald{
+.font_oswald {
   font-family: Oswald, sans-serif;
 }
-.font_rubik{
+.font_rubik {
   font-family: Rubik, sans-serif;
 }
-.fw-500{
+.fw-500 {
   font-weight: 500;
 }
 /*--------------------------------------------- overwrite bootstrap-------------------------------------------- */
@@ -119,6 +116,24 @@
 .ps-relative {
   position: relative;
 }
+
+/* accordion */
+/* .accordion-button {
+  background-color: transparent !important;
+  height: 40px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 7px;
+  padding-left: 0;
+}
+.accordion-item {
+  background-color: transparent !important;
+} */
 
 @media (max-width: 767.98px) {
   .nav-link {

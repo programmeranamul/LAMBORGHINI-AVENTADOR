@@ -1,6 +1,6 @@
 import React from "react";
 import { contactData } from "./../Data/FooterData";
-import paymentImg from "./../../images/payment.png";
+import paymentImg from "./../../images/payment .png";
 import style from "./Footer.module.css"
 
 const FooterBottom = () => {
@@ -16,7 +16,7 @@ const FooterBottom = () => {
             ))}
           </div>
           <div className={`${style.payment} col-md-4 d-flex align-items-center justify-content-end`}>
-            <img className="h-100" src={paymentImg} alt="" />
+            <img src={paymentImg} alt="" />
           </div>
         </div>
       </div>
