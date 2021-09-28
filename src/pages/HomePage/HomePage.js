@@ -13,7 +13,7 @@ import Gallery from "../../components/HomePageComponent/Gallery/Gallery";
 
 const HomePage = () => {
   return (
-    <div>
+    <>
       <Slider />
       <MenuBar />
       <SecondSection />
@@ -25,7 +25,7 @@ const HomePage = () => {
       <BrandAndClient />
       <Gallery />
       <OfferSubscribe />
-    </div>
+    </>
   );
 };
 

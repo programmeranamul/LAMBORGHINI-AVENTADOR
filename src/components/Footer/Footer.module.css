@@ -44,8 +44,6 @@
   border-left: 0.1px solid rgba(255, 255, 255, 0.1);
 }
 
-
-
 .payment {
   height: 70px;
 }
@@ -58,13 +56,12 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-
 @media (max-width: 991.98px) {
   .menu_card:nth-child(odd) {
-    border-left: none
+    border-left: none;
   }
   .title {
-   cursor: pointer;
+    cursor: pointer;
   }
   .title:nth-child(1) {
     display: none;
@@ -72,16 +69,16 @@
   .top_footer {
     padding: 40px 0;
   }
-  .payment{
+  .payment {
     justify-content: center !important;
   }
 }
 
-@media (max-width: 767.98px) { 
+@media (max-width: 767.98px) {
   .menu_card {
-    border-left: none
+    border-left: none;
   }
   .title {
     height: 20px;
   }
- }
+}

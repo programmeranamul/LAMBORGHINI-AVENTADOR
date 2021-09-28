@@ -116,9 +116,7 @@
   color: #6c6f7a !important;
   background-color: #efefef !important;
 }
-.product_page_card .sale_label {
-  /* top: 41px; */
-}
+
 
 @media (max-width: 767.98px) {
   .card__image_wrapper {

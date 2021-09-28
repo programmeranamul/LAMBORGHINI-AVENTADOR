@@ -2,7 +2,7 @@ import React from "react";
 import Categorys from "../Categorys/Categorys";
 import Pagination from "../Pagination/Pagination";
 import ProductsArea from "../ProductsArea/ProductsArea";
-import style from "./ProductPageLayout.module.css"
+import style from "./ProductPageLayout.module.css";
 
 const ProductPageLayout = () => {
   return (
@@ -10,7 +10,7 @@ const ProductPageLayout = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-3 d-none d-lg-block">
-              <Categorys />
+            <Categorys />
           </div>
           <div className="col-lg-9 p-0">
             <ProductsArea />

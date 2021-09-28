@@ -40,7 +40,7 @@ const Categorys = () => {
                   type={"checkbox"}
                   className={style.my_checkbox}
                 />
-                <Form.Check.Label>{data}</Form.Check.Label>
+                <label htmlFor={data}>{data}</label>
               </Form.Check>
             ))}
           </div>

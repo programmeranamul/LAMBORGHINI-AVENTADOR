@@ -14,16 +14,18 @@ const BackToTop = () => {
     }
   });
 
-
   const handelBackToTop = () => {
     window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
-  }
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
-    <div className={`${style.back_to_top} ${show ? "visible" : "invisible"}`} onClick={handelBackToTop}>
+    <div
+      className={`${style.back_to_top} ${show ? "visible" : "invisible"}`}
+      onClick={handelBackToTop}
+    >
       <MdKeyboardArrowUp />
     </div>
   );

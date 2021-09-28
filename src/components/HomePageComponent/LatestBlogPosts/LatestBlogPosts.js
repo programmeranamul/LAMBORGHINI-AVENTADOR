@@ -6,7 +6,7 @@ import { BlogData } from "./../../Data/LatestBlogData";
 
 const LatestBlogPosts = () => {
   return (
-    <div className={`${ style.section} mt_-6`}>
+    <div className={`${style.section} mt_-6`}>
       <div className="container">
         <SectionTitle
           text="LATEST BLOG POST"
@@ -15,7 +15,10 @@ const LatestBlogPosts = () => {
         <div className={`row ${style.post_container}`}>
           {BlogData.length > 0 &&
             BlogData.slice(0, 2).map((data, index) => (
-              <div key={index} className={`${style.post} col-lg-6 mb-5 mb-lg-0`}>
+              <div
+                key={index}
+                className={`${style.post} col-lg-6 mb-5 mb-lg-0`}
+              >
                 <div className="row">
                   <div className="col-sm-6">
                     <img src={data.img} alt="" className="w-100 rounded" />
@@ -23,10 +26,7 @@ const LatestBlogPosts = () => {
                   <div className={`${style.conent} col-sm-6 mt-3 mt-sm-0`}>
                     <p className={style.articel_date_time}>
                       <span className={style.articel_date}>{data.date}</span>
-                      <span className={style.articel_month}>
-                       
-                        /{data.month}
-                      </span>
+                      <span className={style.articel_month}>/{data.month}</span>
                     </p>
                     <h5 className={style.title}>{data.title}</h5>
                     <p className={style.author}>

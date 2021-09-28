@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ProductCard from "../../commonComponent/ProductCard/ProductCard";
 import { ourProductsData } from "./../../Data/ourProductsData";
-import style from "./OurProduct.module.css"
+import style from "./OurProduct.module.css";
 
 const categorys = ["Wheels", "Sounds", "Featured", "Home page"];
 

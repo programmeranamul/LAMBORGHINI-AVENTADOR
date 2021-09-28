@@ -4,10 +4,10 @@ import ProductBanner from './../../components/productPageComponent/ProductBanner
 
 const ProductPage = () => {
     return (
-        <div>
+        <>
            <ProductBanner />
            <ProductPageLayout />
-        </div>
+        </>
     );
 };
 

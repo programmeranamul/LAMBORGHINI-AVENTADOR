@@ -1,8 +1,6 @@
 import React from "react";
 import style from "./Testimonial.module.css";
 import { Carousel } from "react-bootstrap";
-import user from "./../../../images/user1.jpg";
-import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 import TestimonialContent from "./TestimonialContent";
 import { testimonialData } from "../../Data/TestimonialData";
 

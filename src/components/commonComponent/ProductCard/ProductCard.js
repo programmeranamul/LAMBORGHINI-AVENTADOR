@@ -84,7 +84,7 @@ const ProductCard = ({ product, productPage }) => {
           </button>
         </div>
       </div>
-    </div>   
+    </div>
   );
 };
 

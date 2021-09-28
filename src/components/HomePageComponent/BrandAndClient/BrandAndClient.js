@@ -3,7 +3,7 @@ import SectionTitle from "../../section-title/SectionTitle";
 import brandImage from "../../../images/brand.png";
 import style from "./BrandAndClient.module.css";
 
-const datas = [brandImage, brandImage, brandImage, brandImage,brandImage ];
+const datas = [brandImage, brandImage, brandImage, brandImage, brandImage];
 
 const BrandAndClient = () => {
   return (

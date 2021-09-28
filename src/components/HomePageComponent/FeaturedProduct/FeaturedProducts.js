@@ -1,8 +1,7 @@
 import React from "react";
 import { FeaturedProducts } from "../../Data/FearuredProductData";
 import SectionTitle from "../../section-title/SectionTitle";
-import FeaturedProduct from './FeaturedProduct';
-
+import FeaturedProduct from "./FeaturedProduct";
 
 const FearuredProducts = () => {
   return (
@@ -13,7 +12,7 @@ const FearuredProducts = () => {
           "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, recusandae?"
         }
       />
-      <FeaturedProduct data = {FeaturedProducts}/>
+      <FeaturedProduct data={FeaturedProducts} />
     </div>
   );
 };

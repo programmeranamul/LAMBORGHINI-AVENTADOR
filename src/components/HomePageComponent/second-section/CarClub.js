@@ -25,7 +25,7 @@ const CarClub = () => {
               cum! Neque, nihil dolorum.Voluptates, harum. Quisquam repellendus
               quaerat sint at impedit cum! Neque, nihil dolorum
             </p>
-            <p  className="light-gray mt-4 font_rubik fw-200 fs-13 lh-24 ">
+            <p className="light-gray mt-4 font_rubik fw-200 fs-13 lh-24 ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Voluptates, harum.
             </p>

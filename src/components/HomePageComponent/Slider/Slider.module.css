@@ -30,7 +30,7 @@
   text-transform: uppercase;
   margin-bottom: 0px;
   margin-bottom: 0px !important;
-  display: inline-flex
+  display: inline-flex;
 }
 .btn svg {
   background: white;

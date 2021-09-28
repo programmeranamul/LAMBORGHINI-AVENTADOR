@@ -1,10 +1,12 @@
 import React from "react";
 import style from "./ProductBanner.module.css";
 import { Breadcrumb } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
+
 import Menu from "../../MenuBar/Menu";
 
 const ProductBanner = () => {
+  const history = useHistory();
   return (
     <section className={style.section}>
       <div className={style.product_page_menu_conatiner}>
@@ -12,16 +14,16 @@ const ProductBanner = () => {
       </div>
       <div className="container">
         <h2>PRODUCTS</h2>
-     <div className={`text-white text-center ${style.breadcrumb_wrapper}` }>
+        <div className={`text-white text-center ${style.breadcrumb_wrapper}`}>
           <Breadcrumb>
-            <Breadcrumb.Item href="#">
-              <Link to="/">Home</Link>
+            <Breadcrumb.Item href="#" onClick={() => history.push("/")}>
+              Home
             </Breadcrumb.Item>
             <Breadcrumb.Item href="#" active>
               Product
-            </Breadcrumb.Item >
+            </Breadcrumb.Item>
           </Breadcrumb>
-        </div> 
+        </div>
       </div>
     </section>
   );

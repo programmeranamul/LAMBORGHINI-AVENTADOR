@@ -1,6 +1,6 @@
 import React from "react";
 import Menu from "./Menu";
-import style from "./MenuBar.module.css"
+import style from "./MenuBar.module.css";
 
 const MenuBar = () => {
   return (

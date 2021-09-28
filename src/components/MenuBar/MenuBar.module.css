@@ -2,8 +2,8 @@
   background-color: #22232b;
   border-bottom: 1px solid #e51515;
 }
-.my_menu{
-  font-family: Oswald,sans-serif;
+.my_menu {
+  font-family: Oswald, sans-serif;
   font-weight: 300 !important;
 }
 
@@ -20,15 +20,9 @@
   border-radius: 50%;
   padding: 2px 3px !important;
 }
-.product_page_menu {
-  /* width: 100%;
-  position: absolute;
-  top: 20px; */
-}
-
 
 @media (max-width: 767.98px) {
   .icon svg {
     margin-left: 20px !important;
   }
- }
+}
