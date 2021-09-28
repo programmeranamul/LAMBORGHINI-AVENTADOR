@@ -1,18 +1,28 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-
 import HomePage from "./pages/HomePage/HomePage";
 import Footer from "./components/Footer/Footer";
-import BackToTop from './components/commonComponent/BactToTop/BackToTop';
+import BackToTop from "./components/commonComponent/BactToTop/BackToTop";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ProductPage from "./pages/ProductPage/ProductPage";
 
 function App() {
   return (
-    <div className="app">
-      <HomePage />
-      <Footer />
-      <BackToTop />
-    </div>
+    <Router>
+      <div className="app">
+        <Switch>
+          <Route path="/" exact>
+            <HomePage />
+          </Route>
+          <Route path="/products" >
+            <ProductPage />
+          </Route>
+          <Footer />
+        </Switch>
+        <BackToTop />
+      </div>
+    </Router>
   );
 }
 

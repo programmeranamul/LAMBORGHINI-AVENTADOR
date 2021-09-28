@@ -3,28 +3,34 @@ import { Navbar, Container, Nav, NavDropdown, Badge } from "react-bootstrap";
 import { MdSearch, MdMenu, MdShoppingCart } from "react-icons/md";
 import style from "./MenuBar.module.css";
 import { menus } from "./../Data/MenuList";
+import { Link } from "react-router-dom";
 
-const Menu = () => {
+const Menu = ({ bg }) => {
+  console.log(bg);
   const [menuList] = useState(menus);
   return (
-    <div className={style.menu__bar}>
-      <Navbar expand="md">
-        <Container>
+  
+      <Container className={`${bg === "white" ? "product_page_menu" : null}`}>
+        <Navbar expand="md">
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <MdMenu />
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="me-auto ms-auto">
               {menuList.map((menu, index) => {
                 return menu.dropdown ? (
                   <NavDropdown
                     key={index}
                     title={menu.text}
-                    className={menu.active ? "active_menu" : ""}
+                    className={`${menu.active ? "active_menu" : ""} ${style.tt}`}
                   >
                     {menu.dropdownList.length > 0 &&
                       menu.dropdownList.map((dropdown, index) => (
-                        <NavDropdown.Item href="#action/3.1" key={index}>
+                        <NavDropdown.Item
+                          as={Link}
+                          to={dropdown.path}
+                          key={index}
+                        >
                           {dropdown.text}
                         </NavDropdown.Item>
                       ))}
@@ -33,7 +39,8 @@ const Menu = () => {
                   <Nav.Link
                     key={index}
                     className={menu.active ? "active_menu" : ""}
-                    href="#link"
+                    as={Link}
+                    to={menu.path}
                   >
                     {menu.text}
                   </Nav.Link>
@@ -51,9 +58,9 @@ const Menu = () => {
               </div>
             </div>
           </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </div>
+        </Navbar>
+      </Container>
+  
   );
 };
 

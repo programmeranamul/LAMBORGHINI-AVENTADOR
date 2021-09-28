@@ -103,6 +103,22 @@
   font-size: 35px;
 }
 
+
+.product_page_menu{
+  background-color: #fff;
+  border-radius: 7px;
+}
+.product_page_menu .nav-link{
+  color: #000 !important;  
+}
+.product_page_menu svg{
+  color: #000 !important;  
+}
+.product_page_menu .navbar{
+padding-top: 0px !important;
+}
+
+
 /* carousel */
 .carousel-indicators [data-bs-target] {
   width: 8px !important;
@@ -134,6 +150,9 @@
 .accordion-item {
   background-color: transparent !important;
 } */
+.active a{
+  color: red !important;
+}
 
 @media (max-width: 767.98px) {
   .nav-link {

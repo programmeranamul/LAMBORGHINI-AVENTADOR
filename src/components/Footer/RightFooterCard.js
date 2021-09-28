@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Accordion } from "react-bootstrap";
 import style from "./Footer.module.css";
-import { IconName } from "react-icons/md";
 import { FaAngleDown } from "react-icons/fa";
 
 const RightFooterCard = ({ footerData }) => {
   const [device, setDevice] = useState("large");
-  const [collapes, setCollapes] = useState(false);
 
   useEffect(() => {
     const updateSize = () => {

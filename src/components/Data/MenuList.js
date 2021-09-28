@@ -11,7 +11,7 @@ export const menus = [
     ],
   },
   {
-    text: "Home",
+    text: "Shop",
     dropdown: true,
     path: "/",
     dropdownList: [
@@ -21,7 +21,7 @@ export const menus = [
     ],
   },
   {
-    text: "Home",
+    text: "Layouts",
     dropdown: true,
     path: "/",
     dropdownList: [
@@ -30,9 +30,9 @@ export const menus = [
       { text: "Action", path: "/" },
     ],
   },
-  { text: "Home", path: "/" },
+  { text: "Products", path: "/products" },
   {
-    text: "Home",
+    text: "Page",
     dropdown: true,
     path: "/",
     dropdownList: [
