@@ -4,7 +4,7 @@ import OurProduct from "./OurProduct";
 
 const OurProducts = () => {
   return (
-    <div className="bg-main py-5">
+    <div className="bg-main pt-5 pb-3 pb-md-5 mt_-6">
       <SectionTitle
         text={"Our products"}
         description={

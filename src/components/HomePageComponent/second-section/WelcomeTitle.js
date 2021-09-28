@@ -7,9 +7,9 @@ const WelcomeTitle = () => {
       <div className={style.content}>
         <div className={style.text__container}>
           <h2 className={`${style.title} white700 text-uppercase fs-3`}>
-            WELCOME TO <br />{" "}
+           <span> WELCOME TO </span><br />{" "}
             <b className="white800">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CAR STORE
+             <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CAR STORE</span>
             </b>
           </h2>
         </div>

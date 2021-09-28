@@ -10,11 +10,9 @@
 }
 .title {
   font-weight: 300;
-  font-size: 20px;
+  font-size: 14px;
 }
-/* .description{
-    color:#7e7e7e
-} */
+
 .icon_wrapper {
   background-color: #181b23;
   font-size: 36px;
@@ -27,3 +25,10 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
+
+@media (max-width: 767.98px) { 
+  .section {
+    padding: 80px 0;
+  }
+ }

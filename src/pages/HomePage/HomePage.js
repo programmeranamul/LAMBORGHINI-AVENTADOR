@@ -9,7 +9,6 @@ import ProcessSystem from "./../../components/HomePageComponent/ProcessSystem/Pr
 import OfferSubscribe from "./../../components/HomePageComponent/OfferSubscribe/OfferSubscribe";
 import LatestBlogPosts from "../../components/HomePageComponent/LatestBlogPosts/LatestBlogPosts";
 import BrandAndClient from "../../components/HomePageComponent/BrandAndClient/BrandAndClient";
-import SlickSlider from "../../components/commonComponent/SlickSlider/SlickSlider";
 import Gallery from "../../components/HomePageComponent/Gallery/Gallery";
 
 const HomePage = () => {
@@ -25,7 +24,6 @@ const HomePage = () => {
       <LatestBlogPosts />
       <BrandAndClient />
       <Gallery />
-      {/* <SlickSlider /> */}
       <OfferSubscribe />
     </div>
   );

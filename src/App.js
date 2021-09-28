@@ -22,6 +22,7 @@ function App() {
         </Switch>
         <BackToTop />
       </div>
+      <Footer />
     </Router>
   );
 }

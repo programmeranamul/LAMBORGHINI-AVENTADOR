@@ -1,10 +1,11 @@
-.section{
+.section {
   padding-top: 80px;
   background-color: #14151b;
 }
-.post_container{
-    padding: 40px 0 70px;
+.post_container {
+  padding: 40px 0 70px;
 }
+
 .articel_date_time {
   font-size: 14px;
   text-transform: uppercase;
@@ -69,13 +70,24 @@
   font-family: Oswald, sans-serif;
   border: none;
 }
-.articel_month {
+
+@media (max-width: 991.98px) {
+  .post:last-child {
+    display: none;
+  }
 }
 
+@media (max-width: 767.98px) {
+  .post_container {
+    padding: 40px 0 50px;
+  }
+ }
 
 @media (max-width: 575.98px) {
-    .articel{
-        text-align: center 
-    }
+  .articel {
+    text-align: center;
   }
-  
+  .post_container {
+    padding: 40px 0 40px;
+  }
+}

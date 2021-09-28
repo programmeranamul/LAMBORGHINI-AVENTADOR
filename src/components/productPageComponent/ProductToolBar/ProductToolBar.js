@@ -16,7 +16,7 @@ const ProductToolBar = () => {
             <button className={style.list_button}>
               <IoListOutline />
             </button>
-            <button className={style.ioapps_button}>
+            <button className={`${style.ioapps_button } me-lg-4`}>
               <IoApps />
             </button>
             <p className={style.show_item_count}>Showing 1 to 9 of 37 items</p>

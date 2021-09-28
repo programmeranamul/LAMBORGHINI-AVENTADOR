@@ -18,7 +18,7 @@ const ProductBanner = () => {
               <Link to="/">Home</Link>
             </Breadcrumb.Item>
             <Breadcrumb.Item href="#" active>
-              <Link to="/product">Product</Link>
+              Product
             </Breadcrumb.Item >
           </Breadcrumb>
         </div> 

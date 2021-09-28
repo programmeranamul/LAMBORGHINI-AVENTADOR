@@ -5,7 +5,7 @@ import ProductToolBar from "../ProductToolBar/ProductToolBar";
 
 const ProductsArea = () => {
   return (
-    <div>
+    <div className="container">
       <ProductToolBar />
       <div className="row">
         {productPageProductData.slice(0,15).map((product, index) => (

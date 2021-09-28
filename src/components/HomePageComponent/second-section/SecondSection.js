@@ -8,7 +8,7 @@ import WelcomeTitle from './WelcomeTitle';
 
 const SecondSection = () => {
   return (
-    <div className={`${style.section} pb-5 pt-3 bg-main`}>
+    <div className={`${style.section} pb-3 pb-md-5 pt-3 bg-main`}>
       <div className="container">
         <WelcomeTitle/>
         <CarClub />

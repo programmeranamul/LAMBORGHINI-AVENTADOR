@@ -8,7 +8,7 @@ const datas = [img1, img2, img3, img2, img1];
 
 const Gallery = () => {
   return (
-    <div className="bg-main">
+    <div className="bg-main mt_-6">
       <div className="container">
         <h3 className="text-white text-center font_oswald text-uppercase mb-4 fw-normal">#we ON INSTAGRAM</h3>
       </div>

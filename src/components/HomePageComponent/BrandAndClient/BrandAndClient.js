@@ -7,7 +7,7 @@ const datas = [brandImage, brandImage, brandImage, brandImage,brandImage ];
 
 const BrandAndClient = () => {
   return (
-    <div className="bg-main">
+    <div className="bg-main mt_-6">
       <div className="container">
         <SectionTitle text="LOGO BRANDS &amp; CLIENTS" star={"no"} />
         <div className="row" style={{ padding: "30px 0 70px" }}>

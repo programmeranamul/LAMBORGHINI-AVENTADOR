@@ -10,9 +10,9 @@ const Menu = ({ bg }) => {
   const [menuList] = useState(menus);
   return (
   
-      <Container className={`${bg === "white" ? "product_page_menu" : null}`}>
+      <Container className={`${bg === "white" ? "product_page_menu" : null} ${style.my_menu}`}>
         <Navbar expand="md">
-          <Navbar.Toggle aria-controls="basic-navbar-nav">
+          <Navbar.Toggle className="shadow-none" aria-controls="basic-navbar-nav">
             <MdMenu />
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
@@ -22,7 +22,7 @@ const Menu = ({ bg }) => {
                   <NavDropdown
                     key={index}
                     title={menu.text}
-                    className={`${menu.active ? "active_menu" : ""} ${style.tt}`}
+                    className={`${menu.active ? "active_menu" : ""}`}
                   >
                     {menu.dropdownList.length > 0 &&
                       menu.dropdownList.map((dropdown, index) => (
@@ -47,7 +47,18 @@ const Menu = ({ bg }) => {
                 );
               })}
             </Nav>
-            <div>
+            {/* <div>
+              <div className={style.icon}>
+                <MdSearch />
+                <MdMenu />
+                <MdShoppingCart />
+                <Badge bg="white" className={`${style.badged} text-dark`}>
+                  0
+                </Badge>
+              </div>
+            </div> */}
+          </Navbar.Collapse>
+          <div>
               <div className={style.icon}>
                 <MdSearch />
                 <MdMenu />
@@ -57,7 +68,6 @@ const Menu = ({ bg }) => {
                 </Badge>
               </div>
             </div>
-          </Navbar.Collapse>
         </Navbar>
       </Container>
   

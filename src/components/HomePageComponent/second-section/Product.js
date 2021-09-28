@@ -7,9 +7,9 @@ const Product = ({ product }) => {
     <div className={`${style.product_image_container} rounded`}>
       <img src={image} alt={category} />
       <div>
-        <h6 className="text-white mb-0">{category}</h6>
-        <h5 className="fw-bold">{title}</h5>
-        <h6 className="text-white mt-2">{offer}</h6>
+        <h6 className="text-white mb-1">{category}</h6>
+        <h5 >{title}</h5>
+        <h6 className="text-white mt-3">{offer}</h6>
       </div>
     </div>
   );

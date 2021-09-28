@@ -1,5 +1,6 @@
 import React from "react";
 import Categorys from "../Categorys/Categorys";
+import Pagination from "../Pagination/Pagination";
 import ProductsArea from "../ProductsArea/ProductsArea";
 import style from "./ProductPageLayout.module.css"
 
@@ -16,6 +17,7 @@ const ProductPageLayout = () => {
           </div>
         </div>
       </div>
+      <Pagination />
     </div>
   );
 };

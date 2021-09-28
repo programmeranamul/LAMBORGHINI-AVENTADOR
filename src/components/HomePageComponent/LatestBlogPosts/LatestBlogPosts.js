@@ -6,7 +6,7 @@ import { BlogData } from "./../../Data/LatestBlogData";
 
 const LatestBlogPosts = () => {
   return (
-    <div className={`${ style.section} `}>
+    <div className={`${ style.section} mt_-6`}>
       <div className="container">
         <SectionTitle
           text="LATEST BLOG POST"
@@ -15,7 +15,7 @@ const LatestBlogPosts = () => {
         <div className={`row ${style.post_container}`}>
           {BlogData.length > 0 &&
             BlogData.slice(0, 2).map((data, index) => (
-              <div key={index} className="col-lg-6 mb-5 mb-lg-0">
+              <div key={index} className={`${style.post} col-lg-6 mb-5 mb-lg-0`}>
                 <div className="row">
                   <div className="col-sm-6">
                     <img src={data.img} alt="" className="w-100 rounded" />

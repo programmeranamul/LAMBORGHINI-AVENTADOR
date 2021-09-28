@@ -42,18 +42,18 @@ const FeaturedProduct = () => {
                       <MdStarBorder key={index} />
                     )
                   )}{" "}
-                  - <small className="white700">{product.ratingBy}</small>
+                  - <small className="white700">{product.ratings > 0 ? product.ratings : "no"} reviews</small>
                 </div>
                 <div className="pb-4">
-                  <h5 className={`card-title white700`}>{product.title}</h5>
-                  <p className="card-text white200">{product.description}</p>
+                  <h5 className={`card-title white700 ${style.title}`}>{product.title}</h5>
+                  <p className={`card-text white200 ${style.description}`}>{product.description}</p>
                 </div>
-                <div className={style.price}>
+                <div className={`${style.price} font_oswald`}>
                   <p className="">${product.price}</p>
                 </div>
                 <div>
-                  <button className={`${style.my_btn} btn`}>
-                    <MdShoppingCart /> add to cart
+                  <button className={`${style.my_btn} d-flex align-items-center justify-content-center font_oswald btn`}>
+                    <MdShoppingCart className="me-2"/> <span>add to cart</span>
                   </button>
                 </div>
               </div>

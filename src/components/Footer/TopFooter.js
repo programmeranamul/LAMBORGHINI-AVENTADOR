@@ -6,7 +6,7 @@ import RightFooterCard from "./RightFooterCard";
 
 const TopFooter = () => {
   return (
-    <div className={`bg-main ${style.top_footer}`}>
+    <div className={` ${style.top_footer}`}>
       <div className="container">
         <div className="row">
           <div className="col-lg-5 d-flex justify-content-end flex-column">

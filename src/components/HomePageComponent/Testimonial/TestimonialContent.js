@@ -16,12 +16,12 @@ const TestimonialContent = ({ data }) => {
         <span className={style.quotes}>
           <ImQuotesLeft />
         </span>
-        <span className="px-4 white900">{data.text}</span>
+        <span className={`${style.description} px-4 white900 fs-13`}>{data.text}</span>
         <span className={style.quotes}>
           <ImQuotesRight />
         </span>
       </p>
-      <h5 className="text-uppercase text-white mb-4">{data.name}</h5>
+      <p className="text-uppercase text-white mb-4 font_oswald fw-200 fs-14 lp-1">{data.name}</p>
     </div>
   );
 };

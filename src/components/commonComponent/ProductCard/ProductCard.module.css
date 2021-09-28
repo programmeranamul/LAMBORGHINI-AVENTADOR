@@ -1,7 +1,7 @@
 .featured__product__card {
   background-color: #14151b !important;
   border-color: rgba(255, 255, 255, 0.2) !important;
-  border-radius: 8px !important;
+  border-radius: 10px !important;
   position: relative;
 }
 
@@ -95,6 +95,7 @@
 .product_page_card {
   border: 2px solid #efefef;
   background-color: #fff !important;
+  border-radius: 10px;
 }
 .product_page_card h5 {
   color: #181b23 !important;
