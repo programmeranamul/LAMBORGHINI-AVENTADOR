@@ -36,7 +36,6 @@ const Slider = () => {
           loop
           id="myVideo"
           className={style.video}
-          poster={img1}
         >
           <source src={video} type="video/mp4" />
         </video>

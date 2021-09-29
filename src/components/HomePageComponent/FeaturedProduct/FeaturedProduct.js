@@ -30,7 +30,7 @@ const FeaturedProduct = () => {
                 <img
                   className="card-img-top"
                   src={product.image}
-                  alt={product.title}
+                  alt={product.productTitle}
                 />
               </div>
               <div className="card-body">
@@ -49,14 +49,14 @@ const FeaturedProduct = () => {
                 </div>
                 <div className="pb-4">
                   <h5 className={`card-title white700 ${style.title}`}>
-                    {product.title}
+                    {product.productTitle}
                   </h5>
-                  <p className={`card-text white200 ${style.description}`}>
+                  {/* <p className={`card-text white200 ${style.description}`}>
                     {product.description}
-                  </p>
+                  </p> */}
                 </div>
                 <div className={`${style.price} font_oswald`}>
-                  <p className="">${product.price}</p>
+                  <p className="">RS.{product.price}</p>
                 </div>
                 <div>
                   <button

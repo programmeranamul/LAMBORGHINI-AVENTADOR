@@ -18,7 +18,7 @@ const OurProduct = () => {
       </div>
       <div className="row mt-5">
         {ourProducts.map((product, index) => (
-          <div key={index} className="col-lg-3 mb-5 mb-lg-0 col-sm-6 ">
+          <div key={index} className="col-lg-3 mb-5 mb-lg-0 d-flex col-sm-6 ">
             <ProductCard product={product} />
           </div>
         ))}

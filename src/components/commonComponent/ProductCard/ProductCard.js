@@ -42,8 +42,8 @@ const ProductCard = ({ product, productPage }) => {
           </small>
         </div>
         <div className="pb-3">
-          <h5 className={`card-title white700 font_oswald fw-500`}>
-            {product.title}
+          <h5 className={`card-title fs-15 white700 font_oswald fw-500`}>
+            {product.productTitle}
           </h5>
         </div>
         <div className={style.label_container}>
