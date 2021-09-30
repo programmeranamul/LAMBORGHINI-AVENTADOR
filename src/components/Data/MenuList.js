@@ -15,15 +15,19 @@ export const menus = [
     path: "/products",
   },
   {
-    text: "Layouts",
-    dropdown: true,
-    path: "/",
-    dropdownList: [
-      { text: "Action", path: "/" },
-      { text: "Action", path: "/" },
-      { text: "Action", path: "/" },
-    ],
+    text: "Checkout",
+    path: "/check-out",
   },
+  // {
+  //   text: "Layouts",
+  //   dropdown: true,
+  //   path: "/",
+  //   dropdownList: [
+  //     { text: "Action", path: "/" },
+  //     { text: "Action", path: "/" },
+  //     { text: "Action", path: "/" },
+  //   ],
+  // },
   { text: "News", path: "/news" },
   {
     text: "Page",

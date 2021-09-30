@@ -4,6 +4,7 @@ import { MdSearch, MdMenu, MdShoppingCart } from "react-icons/md";
 import style from "./MenuBar.module.css";
 import { menus } from "./../Data/MenuList";
 import { Link } from "react-router-dom";
+import logo from "./../../images/Logo.png";
 
 const Menu = ({ bg }) => {
   const [menuList] = useState(menus);
@@ -14,6 +15,9 @@ const Menu = ({ bg }) => {
       }`}
     >
       <Navbar expand="md">
+        <Navbar.Brand href="#home">
+          <img height="55" className={style.logo} src={logo} alt="" />
+        </Navbar.Brand>
         <Navbar.Toggle className="shadow-none" aria-controls="basic-navbar-nav">
           <MdMenu />
         </Navbar.Toggle>
@@ -49,17 +53,17 @@ const Menu = ({ bg }) => {
               );
             })}
           </Nav>
-        </Navbar.Collapse>
-        <div>
-          <div className={style.icon}>
-            <MdSearch />
-            <MdMenu />
-            <MdShoppingCart />
-            <Badge bg="white" className={`${style.badged} text-dark`}>
-              0
-            </Badge>
+          <div className="d-flex pb-3 pb-md-0">
+            <div className={style.icon}>
+              <MdSearch />
+              <MdMenu />
+              <MdShoppingCart />
+              <Badge bg="white" className={`${style.badged} text-dark`}>
+                0
+              </Badge>
+            </div>
           </div>
-        </div>
+        </Navbar.Collapse>
       </Navbar>
     </Container>
   );

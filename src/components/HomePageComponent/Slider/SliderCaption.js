@@ -2,7 +2,7 @@ import React from "react";
 import { Form } from "react-bootstrap";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import style from "./Slider.module.css";
-import logo from "./../../../images/logo.png";
+import logo from "./../../../images/sliderLogo.png";
 
 const SliderCaption = () => {
   return (

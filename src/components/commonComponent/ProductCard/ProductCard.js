@@ -45,6 +45,11 @@ const ProductCard = ({ product, productPage }) => {
           <h5 className={`card-title fs-15 white700 font_oswald fw-500`}>
             {product.productTitle}
           </h5>
+          <h5
+            className={`card-title fs-13 font_rubik white700 font_oswald fw-500`}
+          >
+            One stop solution for Luxury Auto Parts
+          </h5>
         </div>
         <div className={style.label_container}>
           {product.discount && (

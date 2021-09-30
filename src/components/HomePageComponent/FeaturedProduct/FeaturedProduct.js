@@ -51,6 +51,11 @@ const FeaturedProduct = () => {
                   <h5 className={`card-title white700 ${style.title}`}>
                     {product.productTitle}
                   </h5>
+                  <h5
+                    className={`card-title fs-13 font_rubik white700 font_oswald fw-500`}
+                  >
+                    One stop solution for Luxury Auto Parts
+                  </h5>
                   {/* <p className={`card-text white200 ${style.description}`}>
                     {product.description}
                   </p> */}
