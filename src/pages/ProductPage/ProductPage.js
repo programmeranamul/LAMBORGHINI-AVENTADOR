@@ -1,11 +1,12 @@
 import React from 'react';
 import ProductPageLayout from '../../components/productPageComponent/ProductPageLayout/ProductPageLayout';
-import ProductBanner from './../../components/productPageComponent/ProductBanner/ProductBanner';
+import PageBanner from './../../components/commonComponent/PageBanner/PageBanner';
+
 
 const ProductPage = () => {
     return (
         <>
-           <ProductBanner />
+           <PageBanner title="Product" menu={true}/>
            <ProductPageLayout />
         </>
     );

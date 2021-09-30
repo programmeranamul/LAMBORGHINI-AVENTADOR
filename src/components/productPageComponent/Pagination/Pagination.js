@@ -1,5 +1,4 @@
 import React from "react";
-
 import style from "./Pagination.module.css";
 import { MdKeyboardArrowRight } from "react-icons/md";
 

@@ -3,7 +3,7 @@ export const menus = [
     text: "Home",
     dropdown: true,
     path: "/",
-    active:true,
+    active: true,
     dropdownList: [
       { text: "Action", path: "/" },
       { text: "Action", path: "/" },
@@ -11,14 +11,8 @@ export const menus = [
     ],
   },
   {
-    text: "Shop",
-    dropdown: true,
-    path: "/",
-    dropdownList: [
-      { text: "Action", path: "/" },
-      { text: "Action", path: "/" },
-      { text: "Action", path: "/" },
-    ],
+    text: "Products",
+    path: "/products",
   },
   {
     text: "Layouts",
@@ -30,7 +24,7 @@ export const menus = [
       { text: "Action", path: "/" },
     ],
   },
-  { text: "Products", path: "/products" },
+  { text: "News", path: "/news" },
   {
     text: "Page",
     dropdown: true,

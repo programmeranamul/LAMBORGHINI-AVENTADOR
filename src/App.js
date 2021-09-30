@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer";
 import BackToTop from "./components/commonComponent/BactToTop/BackToTop";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ProductPage from "./pages/ProductPage/ProductPage";
+import NewsPage from './pages/NewsPage/NewsPage';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
           </Route>
           <Route path="/products" >
             <ProductPage />
+          </Route>
+          <Route path="/news" >
+            <NewsPage />
           </Route>
           <Footer />
         </Switch>

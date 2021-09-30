@@ -1,26 +1,29 @@
 import React from "react";
-import style from "./ProductBanner.module.css";
+import style from "./PageBanner.module.css";
 import { Breadcrumb } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 
 import Menu from "../../MenuBar/Menu";
 
-const ProductBanner = () => {
+const PageBanner = ({ title, menu }) => {
   const history = useHistory();
   return (
     <section className={style.section}>
-      <div className={style.product_page_menu_conatiner}>
-        <Menu bg={"white"} />
-      </div>
+      {menu && (
+        <div className={style.product_page_menu_conatiner}>
+          <Menu bg={"white"} />
+        </div>
+      )}
       <div className="container">
-        <h2>PRODUCTS</h2>
+        <h2>{title}</h2>
         <div className={`text-white text-center ${style.breadcrumb_wrapper}`}>
           <Breadcrumb>
             <Breadcrumb.Item href="#" onClick={() => history.push("/")}>
               Home
             </Breadcrumb.Item>
             <Breadcrumb.Item href="#" active>
-              Product
+              {/* Product */}
+              {title}
             </Breadcrumb.Item>
           </Breadcrumb>
         </div>
@@ -29,4 +32,4 @@ const ProductBanner = () => {
   );
 };
 
-export default ProductBanner;
+export default PageBanner;
