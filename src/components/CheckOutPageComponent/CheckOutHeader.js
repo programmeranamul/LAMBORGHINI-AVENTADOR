@@ -5,7 +5,7 @@ import style from "./CheckOutPageComponent.module.css";
 const CheckOutHeader = () => {
   return (
     <div className="checkout_header container">
-      <p className={style.logo}>LAMBORGHINI</p>
+      <p className={`${style.logo} d-none d-lg-block`} >LAMBORGHINI</p>
       <div className={style.my_breadcrumb}>
         <Breadcrumb classname="align-items-center">
           <Breadcrumb.Item
@@ -26,11 +26,11 @@ const CheckOutHeader = () => {
         </Breadcrumb>
       </div>
       <div>
-        <div className="d-flex align-items-center justify-content-between">
-          <p className={`font-roboto fw-200 fs-19`}>Contact information</p>
+        <div className="d-flex align-items-center justify-content-between flex-wrap mb-2">
+          <p className={`font-roboto fw-200 fs-19 mb-0`}>Contact information</p>
           <p className="font-sans fs-14">
             Already have an account?{" "}
-            <span className="text-sky cursor-ponter"> Log in</span>
+            <span className="text-sky cursor-ponter mb-0"> Log in</span>
           </p>
         </div>
         <form>

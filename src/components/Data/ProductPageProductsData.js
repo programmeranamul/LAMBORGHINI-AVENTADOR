@@ -1,6 +1,6 @@
-import product1 from "../../images/proucts/gallery1.jpg";
-import product2 from "../../images/proucts/galler2.jpg";
-import product3 from "../../images/proucts/galler3.jpg";
+import product1 from "../../images/proucts/product1(1).jpg";
+import product2 from "../../images/proucts/product2 (1).jpeg";
+import product3 from "../../images/proucts/product3(1).jpg";
 
 export const productPageProductData = [
   {
