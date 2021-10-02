@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom";
 
 import Menu from "../../MenuBar/Menu";
 
-const PageBanner = ({ title, menu }) => {
+const PageBanner = ({ title, menu, dontShowTitle }) => {
   const history = useHistory();
   return (
     <section className={style.section}>
@@ -15,7 +15,7 @@ const PageBanner = ({ title, menu }) => {
         </div>
       )}
       <div className="container">
-        <h2>{title}</h2>
+        <h2 className={dontShowTitle ? "invisible" : "visible"}>{title}</h2>
         <div className={`text-white text-center ${style.breadcrumb_wrapper}`}>
           <Breadcrumb>
             <Breadcrumb.Item href="#" onClick={() => history.push("/")}>

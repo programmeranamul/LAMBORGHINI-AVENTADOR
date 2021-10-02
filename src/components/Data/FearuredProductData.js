@@ -11,6 +11,7 @@ export const FeaturedProducts = [
     price: "30000",
     image: product1,
     ratings: 4,
+    reatingCount: 4
   },
   {
     productTitle: "Sushila Autotechnik- SATuned",
@@ -20,6 +21,7 @@ export const FeaturedProducts = [
     price: "45000",
     image: product2,
     ratings: 5,
+    reatingCount: 0
   },
   {
     productTitle: "Sushila Autotechnik- SATuned",
@@ -29,5 +31,6 @@ export const FeaturedProducts = [
     price: "120000",
     image: product3,
     ratings: 0,
+    reatingCount: 21
   },
 ];

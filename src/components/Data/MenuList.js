@@ -15,6 +15,10 @@ export const menus = [
     path: "/products",
   },
   {
+    text: "Details",
+    path: "/products/1",
+  },
+  {
     text: "Checkout",
     path: "/check-out",
   },

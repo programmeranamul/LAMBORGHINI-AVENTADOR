@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ProductPage from "./pages/ProductPage/ProductPage";
 import NewsPage from './pages/NewsPage/NewsPage';
 import CheckoutPage from './pages/CheckoutPage/CheckoutPage';
+import ProductDetailsPage from "./pages/ProductDetails/ProductDetailsPage";
 
 function App() {
   return (
@@ -17,8 +18,11 @@ function App() {
           <Route path="/" exact>
             <HomePage />
           </Route>
-          <Route path="/products" >
+          <Route path="/products" exact>
             <ProductPage />
+          </Route>
+          <Route path="/products/:id" >
+            <ProductDetailsPage />
           </Route>
           <Route path="/news" >
             <NewsPage />

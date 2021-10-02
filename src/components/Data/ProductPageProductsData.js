@@ -14,6 +14,9 @@ export const productPageProductData = [
     discount: 35,
     newPrice: "100.00",
     sold: true,
+    reatingCount: 4,
+    brand: "Toyoto",
+  availability:true
   },
   {
     productTitle: "Sushila Autotechnik- SATuned",
@@ -23,6 +26,7 @@ export const productPageProductData = [
     price: "45000",
     image: product2,
     ratings: 5,
+    reatingCount: 4
   },
   {
     productTitle: "Sushila Autotechnik- SATuned",
@@ -35,6 +39,7 @@ export const productPageProductData = [
     discount: 35,
     newPrice: "100.00",
     sold: true,
+    reatingCount: 4
   },
 
   {
@@ -45,6 +50,7 @@ export const productPageProductData = [
     price: "45000",
     image: product2,
     ratings: 5,
+    reatingCount: 4
   },
   {
     productTitle: "Sushila Autotechnik- SATuned",
@@ -57,6 +63,7 @@ export const productPageProductData = [
     discount: 35,
     newPrice: "100.00",
     newProduct: true,
+    reatingCount: 4
   },
   {
     productTitle: "Sushila Autotechnik- SATuned",
@@ -69,6 +76,7 @@ export const productPageProductData = [
     discount: 35,
     newPrice: "100.00",
     newProduct: true,
+    reatingCount: 4
   },
   {
     productTitle: "Sushila Autotechnik- SATuned",
@@ -81,6 +89,7 @@ export const productPageProductData = [
     discount: 35,
     newPrice: "100.00",
     sold: true,
+    reatingCount: 4
   },
 
   {
@@ -91,6 +100,7 @@ export const productPageProductData = [
     price: "45000",
     image: product2,
     ratings: 5,
+    reatingCount: 4
   },
   {
     productTitle: "Sushila Autotechnik- SATuned",
@@ -103,6 +113,7 @@ export const productPageProductData = [
     discount: 35,
     newPrice: "100.00",
     newProduct: true,
+    reatingCount: 4
   },
   {
     productTitle: "Sushila Autotechnik- SATuned",
@@ -115,6 +126,7 @@ export const productPageProductData = [
     discount: 35,
     newPrice: "100.00",
     newProduct: true,
+    reatingCount: 4
   },
   {
     productTitle: "Sushila Autotechnik- SATuned",
@@ -127,6 +139,7 @@ export const productPageProductData = [
     discount: 35,
     newPrice: "100.00",
     sold: true,
+    reatingCount: 4
   },
   {
     productTitle: "Sushila Autotechnik- SATuned",
@@ -136,6 +149,7 @@ export const productPageProductData = [
     price: "45000",
     image: product2,
     ratings: 5,
+    reatingCount: 4
   },
   {
     productTitle: "Sushila Autotechnik- SATuned",
@@ -148,6 +162,7 @@ export const productPageProductData = [
     discount: 35,
     newPrice: "100.00",
     sold: true,
+    reatingCount: 4
   },
 
   {
@@ -158,6 +173,7 @@ export const productPageProductData = [
     price: "45000",
     image: product2,
     ratings: 5,
+    reatingCount: 4
   },
   {
     productTitle: "Sushila Autotechnik- SATuned",
@@ -170,5 +186,6 @@ export const productPageProductData = [
     discount: 35,
     newPrice: "100.00",
     newProduct: true,
+    reatingCount: 4
   },
 ];

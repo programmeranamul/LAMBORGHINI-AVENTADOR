@@ -2,23 +2,12 @@ import React, { useState } from "react";
 import style from "./featured-product.module.css";
 import { MdStar, MdStarBorder, MdShoppingCart } from "react-icons/md";
 import { FeaturedProducts } from "../../Data/FearuredProductData";
+import { getRating } from './../../commonComponent/RatingGenaretor';
+import ShowReview from './../../commonComponent/ShowReview/ShowReview';
 
 const FeaturedProduct = () => {
   const [FeaturedProductList] = useState(FeaturedProducts);
-  const getRating = (rating) => {
-    const totaRating = 5;
-    const star = [];
-    const unRating = totaRating - rating;
-    for (let i = 0; i < rating; i++) {
-      star.push("MdStar");
-    }
-    if (unRating > 0) {
-      for (let i = 0; i < unRating; i++) {
-        star.push("MdStarBorder");
-      }
-    }
-    return star;
-  };
+ 
 
   return (
     <div className="row mt-5">
@@ -34,19 +23,7 @@ const FeaturedProduct = () => {
                 />
               </div>
               <div className="card-body">
-                <div className={`${style.rating} pb-3`}>
-                  {getRating(product.ratings)?.map((rating, index) =>
-                    rating === "MdStar" ? (
-                      <MdStar key={index} />
-                    ) : (
-                      <MdStarBorder key={index} />
-                    )
-                  )}{" "}
-                  -{" "}
-                  <small className="white700">
-                    {product.ratings > 0 ? product.ratings : "no"} reviews
-                  </small>
-                </div>
+                <ShowReview product={product}/>
                 <div className="pb-4">
                   <h5 className={`card-title white700 ${style.title}`}>
                     {product.productTitle}

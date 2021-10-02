@@ -1,23 +1,10 @@
 import React from "react";
 import style from "./ProductCard.module.css";
 import { MdStar, MdStarBorder, MdShoppingCart } from "react-icons/md";
+import { getRating } from "./../RatingGenaretor";
+import ShowReview from "./../ShowReview/ShowReview";
 
-const ProductCard = ({ product, productPage }) => {
-  const getRating = (rating) => {
-    const totaRating = 5;
-    const star = [];
-    const unRating = totaRating - rating;
-    for (let i = 0; i < rating; i++) {
-      star.push("MdStar");
-    }
-    if (unRating > 0) {
-      for (let i = 0; i < unRating; i++) {
-        star.push("MdStarBorder");
-      }
-    }
-    return star;
-  };
-
+const ProductCard = ({ product, productPage, dontShowDes }) => {
   return (
     <div
       className={`${
@@ -28,28 +15,18 @@ const ProductCard = ({ product, productPage }) => {
         <img className="card-img-top" src={product.image} alt={product.title} />
       </div>
       <div className="card-body">
-        <div className={`${style.rating} pb-3`}>
-          {getRating(product.ratings)?.map((rating, index) =>
-            rating === "MdStar" ? (
-              <MdStar key={index} />
-            ) : (
-              <MdStarBorder key={index} />
-            )
-          )}
-          -
-          <small className={style.retting_count}>
-            {product.rettingCount === 0 ? "No" : product.rettingCount} review
-          </small>
-        </div>
+        <ShowReview product={product} />
         <div className="pb-3">
           <h5 className={`card-title fs-15 white700 font_oswald fw-500`}>
             {product.productTitle}
           </h5>
-          <h5
-            className={`card-title fs-13 font_rubik white700 font_oswald fw-500`}
-          >
-            One stop solution for Luxury Auto Parts
-          </h5>
+          
+            <h5
+              className={`${dontShowDes ? "d-none" : "d-block"} card-title fs-13 font_rubik white700 font_oswald fw-500`}
+            >
+              One stop solution for Luxury Auto Parts
+            </h5>
+          
         </div>
         <div className={style.label_container}>
           {product.discount && (

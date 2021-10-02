@@ -1,0 +1,160 @@
+.product_title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #181b23;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #efefef;
+  font-family: Oswald, sans-serif;
+}
+
+.price {
+  color: #e51515;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Oswald, sans-serif;
+}
+
+.text {
+  line-height: 24px;
+  font-family: Rubik, sans-serif;
+  font-weight: 400;
+  color: #5a6069;
+  font-size: 13px;
+}
+
+.btn_group {
+  margin-bottom: 20px;
+}
+
+.my_btn {
+  border-radius: 2px;
+  min-width: 50px !important;
+  margin: 0;
+  border: #e51515 1px solid;
+  font-size: 13px;
+  text-align: center;
+  line-height: 33px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: white;
+  margin-right: 12px;
+  font-family: Rubik, sans-serif;
+  color: #5a6069;
+  transition: all 0.3s ease;
+}
+.btn_selected {
+  color: white;
+  background-color: red;
+}
+
+.input {
+  width: 85px;
+  min-width: auto;
+  height: 38px;
+  line-height: 50px;
+  color: #181b23;
+  font-size: 14px;
+  border-radius: 22px;
+  border: 1px solid #5a6069;
+  padding-left: 7px;
+  text-align: center;
+}
+
+.favorite_icon {
+  color: #363c45;
+  background: #efefef;
+  width: 36px;
+  border-radius: 50%;
+  height: 36px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+.submit_btn {
+  width: 100%;
+  border-radius: 20px !important;
+  text-transform: uppercase;
+  font-family: Oswald, sans-serif !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6c6f7a !important;
+  background-color: #efefef !important;
+  height: 37px;
+}
+
+/* prooduct details description */
+.menu {
+  font-size: 14px;
+  color: #181b23;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 0;
+  padding: 8px 0;
+  margin: 0;
+  background: none;
+  font-family: Oswald, sans-serif;
+}
+
+.active {
+  color: #e51515;
+}
+.pro_des_title {
+  color: #5a6069;
+  font-size: 13px;
+  font-family: Rubik, sans-serif;
+  font-weight: 700;
+}
+.pro_des_text {
+  font-family: Rubik, sans-serif;
+  font-weight: 400;
+  color: #5a6069;
+  font-size: 13px;
+}
+
+
+/* technical data */
+tr{
+  font-size: .75em;
+  
+  font-family: Rubik, sans-serif;
+}
+td:first-child{
+  font-weight: 500;
+}
+
+.technical_data_section{
+  background-image: url("./../../images//technical_data_bg.jpg");
+  background-size: cover;
+  padding: 30px 0;
+}
+
+.technical_data_container{
+  background-color: #d4d2d8;
+  padding: 20px 10px;
+}
+
+
+@media (max-width: 991.98px) {
+  .product_img img {
+    width: 100%;
+  }
+}
+@media (max-width: 767.98px) {
+  .menu{
+    border-top: 1px solid #efefef;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .action_container {
+    justify-content: space-evenly;
+  }
+  
+}
