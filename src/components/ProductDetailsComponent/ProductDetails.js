@@ -32,7 +32,7 @@ const ProductDetails = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container mt-5 pb-5">
       <div className="d-md-flex mb-4">
         {detailsMenuList.map((menu, index) => (
           <div>
