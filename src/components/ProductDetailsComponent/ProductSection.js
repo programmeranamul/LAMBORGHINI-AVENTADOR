@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useContext} from "react";
 import image from "./../../images/3.jpg";
 import ShowReview from "./../commonComponent/ShowReview/ShowReview";
 import { useState } from "react";
@@ -6,13 +6,38 @@ import { productPageProductData } from "./../Data/ProductPageProductsData";
 import style from "./ProductDetails.module.css";
 import { MdFavorite } from "react-icons/md";
 import {  MdShoppingCart } from "react-icons/md";
+import { CardContext } from "../../App";
+import { totalQuantity } from "../../Utilis/GetTotalQuantity";
 
 const btnList = ["ORIGINAL", "Chinese", "Used"];
 
 const ProductSection = () => {
-  const [selected, setSelected] = useState("ORIGINAL");
- 
+  const [selected, setSelected] = useState("ORIGINAL"); 
   const [product] = useState(productPageProductData[0]);
+
+  const [ cardProductLength,setcardproductLength] = useContext(CardContext)
+
+  const handelAddToCard = (product) => {
+    const cardproducts = JSON.parse(localStorage.getItem("cards")) || [];
+    const findProduct = cardproducts.findIndex((pro) => pro.id === product.id);
+
+    if (findProduct < 0) {
+      product["quantity"] = 1;
+      cardproducts.push(product);
+      localStorage.setItem("cards", JSON.stringify(cardproducts));
+      const Quantity = totalQuantity();
+      setcardproductLength(Quantity);
+    } else {
+      const exestProduct = cardproducts[findProduct];
+      exestProduct.quantity += 1;
+      cardproducts[findProduct] = exestProduct;
+      localStorage.setItem("cards", JSON.stringify(cardproducts));
+      const Quantity = totalQuantity();
+      setcardproductLength(Quantity);
+    }
+  };
+
+
   return (
     <div className="container py-5">
       <div className="row">
@@ -70,7 +95,7 @@ const ProductSection = () => {
               </div>
 
               <div className="me-3">
-                <button className={`${style.submit_btn} fs-14 btn `}>
+                <button onClick = {() => handelAddToCard(product)} className={`${style.submit_btn} fs-14 btn `}>
                   <MdShoppingCart className="me-2" /> <span>add to cart</span>
                 </button>
               </div>

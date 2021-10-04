@@ -8,9 +8,21 @@ import {
 } from "react-icons/md";
 
 import OrderPriceSummary from "./OrderPriceSummary";
+import { Alert } from "react-bootstrap";
 
 const OrderPoroductList = () => {
   const [show, setShow] = useState(false);
+  const cardproducts = JSON.parse(localStorage.getItem("cards")) || [];
+
+  let subTotal = 0;
+  for (let i = 0; i < cardproducts.length; i++) {
+    const product = cardproducts[i];
+    const productPrice = product.price * product.quantity;
+    subTotal =subTotal + productPrice;
+  }
+
+  
+
   useEffect(() => {
     const updateSize = () => {
       if (window.innerWidth > 992) {
@@ -27,8 +39,10 @@ const OrderPoroductList = () => {
   }, []);
   return (
     <div>
-      <div className=" pb-4 bg-white">
-        <p className={`${style.logo} d-block d-lg-none mb-0 container`}>LAMBORGHINI</p>
+      <div className="d-block d-lg-none  pb-4 bg-white">
+        <p className={`${style.logo} mb-0 container`}>
+          LAMBORGHINI
+        </p>
       </div>
       <div
         className={` d-block d-lg-none mb-2 ${style.show_hide_sidebar}`}
@@ -44,7 +58,9 @@ const OrderPoroductList = () => {
               {show ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown />}
             </span>
           </p>
-          <p className={`${style.acc_grand_total} cursor-ponter mb-0`}>RS. 156785</p>
+          <p className={`${style.acc_grand_total} cursor-ponter mb-0`}>
+            RS. 156785
+          </p>
         </div>
       </div>
       <div
@@ -52,7 +68,7 @@ const OrderPoroductList = () => {
           show ? "d-block" : "d-none"
         } container`}
       >
-        {orderProductList.map((product, index) => (
+        {cardproducts.length > 0 ? cardproducts.map((product, index) => (
           <div key={index} className={`${style.order_product_list} mb-3`}>
             <div className="d-flex">
               <div className={style.product_img_container}>
@@ -63,12 +79,12 @@ const OrderPoroductList = () => {
               </div>
               <div className={style.product_des}>
                 <p>{product.title}</p>
-                <p>RS. {product.price}</p>
+                <p>RS. {product.price * product.quantity}</p>
               </div>
             </div>
           </div>
-        ))}
-        <OrderPriceSummary />
+        )) : <Alert varient = "danger" >No product available in cart </Alert>}
+        <OrderPriceSummary subTotal = {subTotal}/>
       </div>
     </div>
   );

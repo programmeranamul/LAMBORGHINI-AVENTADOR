@@ -9,7 +9,7 @@ import { totalQuantity } from "../../../Utilis/GetTotalQuantity";
 
 const FeaturedProduct = () => {
   const [FeaturedProductList] = useState(productPageProductData);
-  const [ setcardproductLength] = useContext(CardContext);
+  const [ cardProductLength,setcardproductLength] = useContext(CardContext);
 
   const handelAddToCard = (product) => {
     const cardproducts = JSON.parse(localStorage.getItem("cards")) || [];
@@ -20,7 +20,7 @@ const FeaturedProduct = () => {
       cardproducts.push(product);
       localStorage.setItem("cards", JSON.stringify(cardproducts));
       const Quantity = totalQuantity();
-      setcardproductLength(Quantity);
+    setcardproductLength(Quantity);
     } else {
       const exestProduct = cardproducts[findProduct];
       exestProduct.quantity += 1;

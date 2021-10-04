@@ -7,7 +7,7 @@ import { CardContext } from './../../../App';
 
 const ProductCard = ({ product, productPage, dontShowDes }) => {
 
-  const [setcardproductLength] = useContext(CardContext)
+  const [ cardProductLength,setcardproductLength] = useContext(CardContext)
 
   const handelAddToCard = (product) => {
     const cardproducts = JSON.parse(localStorage.getItem("cards")) || [];
