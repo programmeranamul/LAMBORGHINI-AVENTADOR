@@ -1,13 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useContext} from "react";
 import { Navbar, Container, Nav, NavDropdown, Badge } from "react-bootstrap";
-import { MdSearch, MdMenu, MdShoppingCart } from "react-icons/md";
+import { MdSearch, MdMenu, MdShoppingCart, MdClose } from "react-icons/md";
 import style from "./MenuBar.module.css";
 import { menus } from "./../Data/MenuList";
 import { Link } from "react-router-dom";
 import logo from "./../../images/Logo.png";
+import { CardContext } from './../../App';
 
 const Menu = ({ bg }) => {
   const [menuList] = useState(menus);
+  const [showSearchBox, setShowSearchBox] = useState(false);
+  const [searchtext, setSearchText] = useState("")
+
+ const [cardProductLength]  = useContext(CardContext)
+
+  
   return (
     <Container
       className={`${bg === "white" ? "product_page_menu" : null} ${
@@ -55,11 +62,27 @@ const Menu = ({ bg }) => {
           </Nav>
           <div className="d-flex pb-3 pb-md-0">
             <div className={style.icon}>
-              <MdSearch />
+              <div
+                className={`${style.serach_wrapepr} d-flex align-items-center`}
+              >
+                <input
+                  type="text"
+                  value = {searchtext}
+                  onChange={(e) => setSearchText(e.target.value)}
+                  className={`${style.search_box} ${
+                    showSearchBox ? "d-blcok" : "d-none"
+                  }`}
+                />
+                {showSearchBox ? (
+                  <MdClose onClick={() => setShowSearchBox(false)} />
+                ) : (
+                  <MdSearch onClick={() => setShowSearchBox(true)} />
+                )}
+              </div>
               <MdMenu />
               <MdShoppingCart />
               <Badge bg="white" className={`${style.badged} text-dark`}>
-                0
+                {cardProductLength}
               </Badge>
             </div>
           </div>

@@ -1,17 +1,40 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import style from "./featured-product.module.css";
-import {  MdShoppingCart } from "react-icons/md";
-import { FeaturedProducts } from "../../Data/FearuredProductData";
-import ShowReview from './../../commonComponent/ShowReview/ShowReview';
+import { MdShoppingCart } from "react-icons/md";
+// import { FeaturedProducts } from "../../Data/FearuredProductData";
+import ShowReview from "./../../commonComponent/ShowReview/ShowReview";
+import { productPageProductData } from "./../../Data/ProductPageProductsData";
+import { CardContext } from "./../../../App";
+import { totalQuantity } from "../../../Utilis/GetTotalQuantity";
 
 const FeaturedProduct = () => {
-  const [FeaturedProductList] = useState(FeaturedProducts);
- 
+  const [FeaturedProductList] = useState(productPageProductData);
+  const [ setcardproductLength] = useContext(CardContext);
+
+  const handelAddToCard = (product) => {
+    const cardproducts = JSON.parse(localStorage.getItem("cards")) || [];
+    const findProduct = cardproducts.findIndex((pro) => pro.id === product.id);
+
+    if (findProduct < 0) {
+      product["quantity"] = 1;
+      cardproducts.push(product);
+      localStorage.setItem("cards", JSON.stringify(cardproducts));
+      const Quantity = totalQuantity();
+      setcardproductLength(Quantity);
+    } else {
+      const exestProduct = cardproducts[findProduct];
+      exestProduct.quantity += 1;
+      cardproducts[findProduct] = exestProduct;
+      localStorage.setItem("cards", JSON.stringify(cardproducts));
+      const Quantity = totalQuantity();
+      setcardproductLength(Quantity);
+    }
+  };
 
   return (
     <div className="row mt-5">
       {FeaturedProductList.length > 0 &&
-        FeaturedProductList.map((product, index) => (
+        FeaturedProductList.slice(0, 3).map((product, index) => (
           <div key={index} className="col-md-4 mb-5 mb-md-0 ">
             <div className={`${style.featured__product__card} card`}>
               <div className={style.card__image_wrapper}>
@@ -22,7 +45,7 @@ const FeaturedProduct = () => {
                 />
               </div>
               <div className="card-body">
-                <ShowReview product={product}/>
+                <ShowReview product={product} />
                 <div className="pb-4">
                   <h5 className={`card-title white700 ${style.title}`}>
                     {product.productTitle}
@@ -41,6 +64,7 @@ const FeaturedProduct = () => {
                 </div>
                 <div>
                   <button
+                    onClick={() => handelAddToCard(product)}
                     className={`${style.my_btn} d-flex align-items-center justify-content-center font_oswald btn`}
                   >
                     <MdShoppingCart className="me-2" /> <span>add to cart</span>

@@ -4,6 +4,7 @@ import product3 from "../../images/proucts/product3(1).jpg";
 
 export const productPageProductData = [
   {
+    id: "1111111",
     productTitle: "Sushila Autotechnik- SATuned",
     partsBrand: "Mercedes Benz",
     carVariant: "GLC class, GLE class",
@@ -28,7 +29,7 @@ export const productPageProductData = [
     ratings: 5,
     reatingCount: 4
   },
-  {
+  {id: "1111111",
     productTitle: "Sushila Autotechnik- SATuned",
     partsBrand: "Mercedes Benz",
     carVariant: "GLC class, GLE class",
@@ -79,6 +80,7 @@ export const productPageProductData = [
     reatingCount: 4
   },
   {
+    id: "1111111",
     productTitle: "Sushila Autotechnik- SATuned",
     partsBrand: "Mercedes Benz",
     carVariant: "GLC class, GLE class",
@@ -128,7 +130,7 @@ export const productPageProductData = [
     newProduct: true,
     reatingCount: 4
   },
-  {
+  {id: "1111111",
     productTitle: "Sushila Autotechnik- SATuned",
     partsBrand: "Mercedes Benz",
     carVariant: "GLC class, GLE class",
@@ -151,7 +153,7 @@ export const productPageProductData = [
     ratings: 5,
     reatingCount: 4
   },
-  {
+  {id: "1111111",
     productTitle: "Sushila Autotechnik- SATuned",
     partsBrand: "Mercedes Benz",
     carVariant: "GLC class, GLE class",
