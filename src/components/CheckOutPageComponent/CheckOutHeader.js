@@ -7,7 +7,7 @@ const CheckOutHeader = () => {
     <div className="checkout_header container">
       <p className={`${style.logo} d-none d-lg-block`} >LAMBORGHINI</p>
       <div className={style.my_breadcrumb}>
-        <Breadcrumb classname="align-items-center">
+        <Breadcrumb className="align-items-center">
           <Breadcrumb.Item
             className={`${style.my_breadcrumb_item} ${style.frist_child}`}
             href="#"

@@ -7,6 +7,7 @@
   position: relative;
 }
 
+
 /* color  */
 .white800 {
   color: rgba(255, 255, 255, 0.8);
@@ -250,6 +251,20 @@
 }
 .breadcrumb {
   align-items: center;
+}
+
+
+/* over write sticky npm */
+.sticky-inner-wrapper {
+  position: fixed;
+    transform: translate3d(0px, 0px, 0px);
+    top: 0px;
+    width: 100% !important;
+    z-index: 1111;
+    background: black;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
 @media (max-width: 767.98px) {

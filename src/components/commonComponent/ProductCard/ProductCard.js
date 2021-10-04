@@ -1,7 +1,6 @@
 import React from "react";
 import style from "./ProductCard.module.css";
-import { MdStar, MdStarBorder, MdShoppingCart } from "react-icons/md";
-import { getRating } from "./../RatingGenaretor";
+import { MdShoppingCart } from "react-icons/md";
 import ShowReview from "./../ShowReview/ShowReview";
 
 const ProductCard = ({ product, productPage, dontShowDes }) => {
@@ -45,7 +44,7 @@ const ProductCard = ({ product, productPage, dontShowDes }) => {
             </div>
           )}
         </div>
-        <div className={`${style.price} d-flex`}>
+        <div className={`${style.price} d-flex flex-wrap`}>
           {product.discount && (
             <p className={style.discount}>{product.discount}%</p>
           )}

@@ -9,7 +9,7 @@ const ProductsArea = () => {
       <ProductToolBar />
       <div className="row">
         {productPageProductData.slice(0, 15).map((product, index) => (
-          <div key={index} className="col-md-4 col-sm-6 d-flex mb-4">
+          <div key={index} className="col-md-4 col-6 d-flex mb-4">
             <ProductCard product={product} productPage={true} />
           </div>
         ))}

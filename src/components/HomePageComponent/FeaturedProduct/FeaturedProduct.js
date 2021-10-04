@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import style from "./featured-product.module.css";
-import { MdStar, MdStarBorder, MdShoppingCart } from "react-icons/md";
+import {  MdShoppingCart } from "react-icons/md";
 import { FeaturedProducts } from "../../Data/FearuredProductData";
-import { getRating } from './../../commonComponent/RatingGenaretor';
 import ShowReview from './../../commonComponent/ShowReview/ShowReview';
 
 const FeaturedProduct = () => {

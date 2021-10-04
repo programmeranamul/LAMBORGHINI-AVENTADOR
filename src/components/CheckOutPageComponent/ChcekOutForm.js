@@ -126,8 +126,8 @@ const ChcekOutForm = () => {
                 aria-label="Floating label select example"
                 {...register("country")}
               >
-                {countryName.map((country) => (
-                  <option>{country}</option>
+                {countryName.map((country, index) => (
+                  <option key={index}>{country}</option>
                 ))}
               </Form.Select>
             </FloatingLabel>

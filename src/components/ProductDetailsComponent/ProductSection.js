@@ -11,7 +11,7 @@ const btnList = ["ORIGINAL", "Chinese", "Used"];
 
 const ProductSection = () => {
   const [selected, setSelected] = useState("ORIGINAL");
-  console.log(selected);
+ 
   const [product] = useState(productPageProductData[0]);
   return (
     <div className="container py-5">
